@@ -1,0 +1,20 @@
+services:
+    nockiro.modissuesuffix.listener:
+        class: nockiro\modissuesuffix\event\main_listener
+        arguments:
+            - '@language'
+            - '@auth'
+            - '@config'
+            - '@request'
+            - '@template'
+        tags:
+            - { name: event.listener }
+    nockiro.modissuesuffix.controller.acp:
+        class: nockiro\modissuesuffix\controller\acp_controller
+        arguments:
+            - '@config'
+            - '@language'
+            - '@log'
+            - '@request'
+            - '@template'
+            - '@user'

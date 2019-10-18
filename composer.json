@@ -1,0 +1,27 @@
+{
+    "name": "nockiro/modissuesuffix",
+    "type": "phpbb-extension",
+    "description": "Can be used to set suffixes on topics that only allowed groups can see and edit",
+    "homepage": "https://www.github.com/Nockiro/phpbb-modissuesuffix",
+    "version": "1.0.0-dev",
+    "time": "2019-09-29",
+    "license": "GPL-2.0-only",
+    "authors": [
+        {
+            "name": "Robin Freund",
+            "email": "info@nockiro.de",
+            "homepage": "https:/www.nockiro.de",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "composer/installers": "~1.0"
+    },
+    "extra": {
+        "display-name": "Moderated topic issue suffixes",
+        "soft-require": {
+            "phpbb/phpbb": ">=3.2.0,<3.3.0@dev"
+        }
+    }
+}

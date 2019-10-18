@@ -1,0 +1,29 @@
+{% include 'overall_header.html' %}
+
+<h1>{{ lang('ACP_MODISSUESUFFIX_TITLE') }}</h1>
+
+{% if S_ERROR %}
+	<div class="errorbox">
+		<h3>{{ lang('WARNING') }}</h3>
+		<p>{{ ERROR_MSG }}</p>
+	</div>
+{% endif %}
+
+<form id="nockiro_modissuesuffix_acp" name="nockiro_modissuesuffix_acp" method="post" action="{{ U_ACTION }}">
+
+	<fieldset>
+		<legend>{{ lang('SETTINGS') }}</legend>
+		<dl>
+			<dt><label for="baseUri">{{ lang('ACP_MODISSUESUFFIX_BASEURI') ~ lang('COLON') }}</label></dt>
+			<dd><input class="text medium" type="text" id="baseUri" name="nockiro_modissuesuffix_baseUri" value="{{ ACP_MODISSUESUFFIX_BASEURI }}" maxlength="50" /></dd>
+		</dl>
+	</fieldset>
+
+	<fieldset class="submit-buttons">
+		<input class="button1" type="submit" id="submit" name="submit" value="{{ lang('SUBMIT') }}" />&nbsp;
+		{{ S_FORM_TOKEN }}
+	</fieldset>
+
+</form>
+
+{% include 'overall_footer.html' %}
