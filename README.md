@@ -6,6 +6,7 @@ If you would use it for any reason, but you have questions, feel free to ask or 
 
 ## Install
 
+0. Make sure the extension [Topic Suffix Tags (helper ext)](https://github.com/marttiphpbb/phpbb-ext-topicsuffixtags) is installed
 1. Copy the content of this repo to `ext/nockiro/modissuesuffix`
 2. Navigate in the ACP to `Customise -> Manage extensions` and enable the extension
 3. Set the base URI to your issues (e.g. https://git.example.com/sampleProject/issues/) in the ACP (`Extensions -> ModSuffix Plugin Settings`)
@@ -16,6 +17,7 @@ If you would use it for any reason, but you have questions, feel free to ask or 
 1. Navigate in the ACP to `Customise -> Extension Management -> Extensions`.
 2. Look for `Moderated topic issue suffixes` under the Enabled Extensions list, and click its `Disable` link.
 3. For a complete uninstall, click `Delete Data` and delete the `/ext/nockiro/modissuesuffix` directory.
+4. Repeat 2 and 3 for the helper extension
 
 ## License
 [GNU General Public License v2](http://opensource.org/licenses/GPL-2.0)
